@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Miss Di Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #fdeff9, #e0f2ff);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeDown 1.5s ease;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #5a5cff;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #5a5cff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.main-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    text-decoration: tan;
+    font-size: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #5a5cff;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* FORM */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background: #5a5cff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.call-btn {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #28a745;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="photo. jpg.jpg" class="logo" alt="Miss Di Academy">
+    <h1>Miss Di Academy 🌸</h1>
+    <p>Любовь к обучению начинается с детства ✨</p>
+
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#courses">Курсы</a>
+        <a href="#signup">Запись</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a href="#signup" class="main-btn">✨ Записаться</a>
+</header>
+
+<section id="about">
+    <h2>Обо мне</h2>
+    <div class="card">
+        Я Мадинабону Хатамова — педагог с любовью к детям 💖  
+        Мои занятия проходят через игру, радость и доверие.  
+        Дети учатся с удовольствием 🌈
+
+        🌸 Привет! Я Мадинабону Хатамова (Miss Di) 🌸
+        📚 Сейчас я студентка Национального Университета Узбекистана имени Алишера Навои факультета иностранных языков
+        👩‍🏫 Имею 2 года опыта работы в дошкольном образовании — мой первый ученик это мой младший брат, а летом работала с 15 детьми. Также я работала преподавателем русского языка и воспитателем. Сейчас занимаюсь подготовкой одного ученика к школе 😊
+        ✨ Мои занятия проходят через игры и интерактивные упражнения, поэтому дети с удовольствием учатся, а родители часто говорят: "Мы привыкли к вам, такого воспитателя мы ещё не встречали!" 💖
+        💎 Личные качества: терпение, лёгкость в общении, улыбчивость — это помогает устанавливать тёплые отношения с детьми и их родителями.
+        🎯 Моя цель — открыть собственный учебный центр и увеличить количество опытных педагогов, чтобы продолжать давать детям качественное и интересное образование.
+
+        Буду обучать детей с 5 до 15 лет. 
+    </div>
+</section>
+
+<section id="courses">
+    <h2> Мои курсы : </h2>
+    <div class="card">📘 Подготавка к школе (чтение, письмо, логика)</div>
+    <div class="card">🧸 Дошкольное развитие через игру</div>
+    <div class="card">🗣 Русский язык </div>
+    <div class="card">🗣 Английский язык </div>
+    <div class="card">🎨 Развитие мышления и уверенности</div>
+</section>
+
+<section id="signup">
+    <h2>Запись на занятия</h2>
+    <div class="card">
+        <form onsubmit="sendTelegram(event)">
+            <input type="text" id="name" placeholder="Имя родителя" required>
+            <input type="tel" id="phone" placeholder="Номер телефона" required>
+
+            <select id="course" required>
+                <option value="">Выберите курс</option>
+                <option>Подготовка к школе</option>
+                <option> Английский язык</option>
+                <option>Русский язык</option>
+            </select>
+
+            <textarea id="message" placeholder="Возраст ребёнка / комментарий"></textarea>
+
+            <button type="submit">📩 Отправить заявку</button>
+        </form>
+
+        <a href="tel:+998999543773" class="call-btn">☎️ Позвонить сейчас</a>
+        <a href="https://t.me/missdi_academy_bot" target="_blank" class="call-btn" style="background:#25D366;">💬 Написать администратору</a>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <div class="card">
+        📞 +998 99 954 37 73<br>
+        ✉ madiwkaxatamova@gmail.com
+    </div>
+</section>
+
+<script>
+function sendTelegram(e) {
+    e.preventDefault();
+
+    const TOKEN = "8464213083:AAFLwSGbQGZxoAWGM12njwU9PvDWrPUHjDA"; // вставь токен бота
+    const CHAT_ID = "t.me/missdi_academy_bot.";  // вставь chat_id
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const course = document.getElementById("course").value;
+    const message = document.getElementById("message").value;
+
+    const text =
+`📌 Новая заявка:
+👤 Имя: ${name}
+📞 Телефон: ${phone}
+📘 Курс: ${course}
+💬 Комментарий: ${message}`;
+
+    fetch(`https://api.telegram.org/bot8464213083:AAFLwSGbQGZxoAWGM12njwU9PvDWrPUHjDA/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: t.me/missdi_academy_bot, text: text })
+    })
+    .then(() => {
+        alert("Заявка отправлена! Мы скоро свяжемся 🌸");
+        document.querySelector("form").reset();
+    })
+    .catch(() => alert("Ошибка отправки"));
+}
+</script>
+
+</body>
+</html>
+
